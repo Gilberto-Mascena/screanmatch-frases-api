@@ -19,7 +19,7 @@
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Postman](https://www.postman.com/)
-- 
+
 ---
 
 ## Como rodar a aplicação
