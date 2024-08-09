@@ -5,7 +5,7 @@
 - Deve responder no endpoint: "/series/frases" do controller.
 ---
 
-## Tecnologias Utilizadas
+## Tecnologias Adotadas
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [JPA](https://spring.io/projects/spring-data-jpa)
