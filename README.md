@@ -23,6 +23,7 @@
 
 ## Como rodar a aplicação
 - Clone o repositório
+- Crie um banco de dados no PostgreSQL
 - Abra o projeto em sua IDE
 - Configure o arquivo application-dev.yml com as informações do seu banco de dados
 - Execute a aplicação
