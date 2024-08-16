@@ -1,4 +1,4 @@
-# 🛠 Desafio formação backend Java e Spring Boot Alura + ONE
+# Desafio formação backend Java e Spring Boot Alura + ONE
 ## Descrição do Projeto
 - Desenvolver uma API que retorne um json, com uma frase aleatória do banco de dados com: frase, personagem e poster.
 - Deve responder no endpoint: "/series/frases" do controller.
