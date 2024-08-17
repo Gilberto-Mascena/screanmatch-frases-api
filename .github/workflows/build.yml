@@ -17,7 +17,7 @@ jobs:
   
         - name: Packaging Screanmatch frases aleatorias.zip
           run: |
-            zip -q -r *.zip ./* --exclude=*.git* --exclude=*.github* --exclude=*.gitignore* --exclude=*.md* 
+            zip -q -r *.zip ./* -x .git/* -x .github/* -x .gitignore 
             ls -l *.zip
   
         - name: Create Release
