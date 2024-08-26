@@ -1,3 +1,6 @@
+[Português Brasileiro](https://github.com/Gilberto-Mascena/screanmatch-frases-api/blob/main/README.md) | 
+[English](https://github.com/Gilberto-Mascena/screanmatch-frases-api/blob/main/README-en.md)
+
 # Desafio formação backend Java e Spring Boot Alura + ONE
 
 ## Descrição do Projeto
