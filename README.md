@@ -1,8 +1,9 @@
 # Desafio formação backend Java e Spring Boot Alura + ONE
+
 ## Descrição do Projeto
+
 - Desenvolver uma API que retorne um json, com uma frase aleatória do banco de dados com: frase, personagem e poster.
 - Deve responder no endpoint: "/series/frases" do controller.
----
 
 ## Tecnologias Adotadas
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
@@ -12,14 +13,10 @@
 - [PostgreSQL](https://www.postgresql.org/)
 - [Maven](https://maven.apache.org/)
 
----
-
 ## Requisitos
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Postman](https://www.postman.com/)
-
----
 
 ## Como rodar a aplicação
 - Clone o repositório
@@ -29,8 +26,6 @@
 - Execute a aplicação
 - Utilize o Postman para testar a aplicação
 - Acesse o endpoint: http://localhost:8080/series/frases
-
----
 
 ## Scripts SQL para popular a base de dados
 ````
@@ -48,8 +43,8 @@ insert into frases(id, frase, personagem, titulo, poster) values (10, 'Você me 
 
 ---
 
-## *License*
+## *Licença*
 
-*The* [*MIT License*](LICENSE.md) (*MIT*)
+[*Licença MIT*](LICENSE.md) (*MIT*)
 
-*Copyright :copyright: 2024* 
+### Gilberto | Dev _2024_ 
