@@ -21,7 +21,7 @@
 - [PostgreSQL](https://www.postgresql.org/)
 - [Postman](https://www.postman.com/)
 
-## Projeto em execção com Frontend
+## Projeto em execução com Frontend
 ![titanic](/src/main/resources/static/titanic.png)
 
 ![how i met your mother.png](/src/main/resources/static/how-i-met-your-mother.png)
