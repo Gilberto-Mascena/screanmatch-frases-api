@@ -21,6 +21,11 @@
 - [PostgreSQL](https://www.postgresql.org/) 
 - [Postman](https://www.postman.com/) 
 
+## Project running with Frontend
+![titanic](/src/main/resources/static/titanic.png)
+
+![how i met your mother.png](/src/main/resources/static/how-i-met-your-mother.png)
+
  ## How run the application
 - Clone the repository
 - Create a database in PostgreSQL
