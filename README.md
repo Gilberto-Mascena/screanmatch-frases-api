@@ -10,14 +10,24 @@
 ![Data de Lançamento](https://img.shields.io/github/release-date/Gilberto-Mascena/screanmatch-frases-api?style=for-the-badge)
 ![Tamanho do Repositório](https://img.shields.io/github/repo-size/Gilberto-Mascena/screanmatch-frases-api?style=for-the-badge)
 
-# Desafio formação backend Java e Spring Boot Alura + ONE
+# Screanmatch Frases API
 
-## Descrição do Projeto
+## Desafio - Formação Backend Java e Spring Boot (Alura + ONE)
 
-- Desenvolver uma API que retorne um json, com uma frase aleatória do banco de dados com: frase, personagem e poster.
-- Deve responder no endpoint: "/series/frases" do controller.
+### 💡 Sobre o Projeto
 
-## Tecnologias Adotadas
+O Screanmatch Frases API é uma API REST desenvolvida em Java com Spring Boot, que retorna uma frase aleatória de um banco de dados contendo frases icônicas de séries e filmes. A API fornece os seguintes dados:
+
+✅ Frase\
+✅ Personagem\
+✅ Título da obra\
+✅ Pôster do filme/série
+
+### 🔍 Endpoint Disponível
+
+_*GET /series/frases*_
+
+### 📚 Tecnologias Utilizadas
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [JPA](https://spring.io/projects/spring-data-jpa)
@@ -25,26 +35,39 @@
 - [PostgreSQL](https://www.postgresql.org/)
 - [Maven](https://maven.apache.org/)
 
-## Requisitos
+### 🛠️ Requisitos
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Postman](https://www.postman.com/)
 
-## Projeto em execução com Frontend
+### 🌟 Demonstração
+
 ![titanic](/src/main/resources/static/titanic.png)
 
 ![how i met your mother.png](/src/main/resources/static/how-i-met-your-mother.png)
 
-## Como rodar a aplicação
-- Clone o repositório
-- Crie um banco de dados no PostgreSQL
-- Abra o projeto em sua IDE
-- Configure o arquivo application-dev.yml com as informações do seu banco de dados
-- Execute a aplicação
-- Utilize o Postman para testar a aplicação
-- Acesse o endpoint: http://localhost:8080/series/frases
+### 🚀 Como Executar
+1. Clone o repositório
+```
+git clone https://github.com/Gilberto-Mascena/screanmatch-frases-api.git
+```
+2. Crie um banco de dados no PostgreSQL
 
-## Scripts SQL para popular a base de dados
+3. Configure o arquivo application-dev.yml com suas credenciais do banco de dados
+
+4. Abra o projeto na IDE de sua preferência (IntelliJ, VS Code, Eclipse, etc.)
+
+5. Execute a aplicação
+
+```
+mvn spring-boot:run
+```
+
+6. Teste a API via Postman ou navegador
+
+Acesse: http://localhost:8080/series/frases
+
+### 🔧 Scripts SQL para popular a base de dados
 ````
 insert into frases(id, frase, personagem, titulo, poster) values (1, 'Amigos não mentem', 'Eleven', 'Stranger things', 'https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg');
 insert into frases(id, frase, personagem, titulo, poster) values (2, 'Bem-vinda ao mundo real. É uma droga. Você vai amar', 'Monica', 'Friends', 'https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg');
@@ -71,8 +94,8 @@ insert into frases(id, frase, personagem, titulo, poster) values (20, 'A felicid
 
 ---
 
-## *Licença*
+### 📜 *Licença*
 
-[*Licença MIT*](LICENSE.md) (*MIT*)
+*Este projeto está licenciado sob a MIT License. Veja mais detalhes em:* [_LICENSE.md_](./LICENSE.md)
 
 ### Gilberto | Dev _2024_ 
