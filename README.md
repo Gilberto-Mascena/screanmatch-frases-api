@@ -1,6 +1,15 @@
 [Português Brasileiro](https://github.com/Gilberto-Mascena/screanmatch-frases-api/blob/main/README.md) | 
 [English](https://github.com/Gilberto-Mascena/screanmatch-frases-api/blob/main/README-en.md)
 
+![Status de Manutenção](https://img.shields.io/badge/Maintained-Yes-brightgreen?style=for-the-badge)
+[![GitHub Actions Status](https://img.shields.io/github/actions/workflow/status/Gilberto-Mascena/screanmatch-frases-api/build.yml?style=for-the-badge)](https://github.com/Gilberto-Mascena/screanmatch-frases-api/actions)
+[![Licença](https://img.shields.io/github/license/Gilberto-Mascena/screanmatch-frases-api?style=for-the-badge)](https://github.com/Gilberto-Mascena/screanmatch-frases-api/blob/main/LICENSE.md)
+[![Estrelas no GitHub](https://img.shields.io/github/stars/Gilberto-Mascena/screanmatch-frases-api?style=for-the-badge)](https://github.com/Gilberto-Mascena/screanmatch-frases-api/stargazers)
+[![Problemas no GitHub](https://img.shields.io/github/issues/Gilberto-Mascena/screanmatch-frases-api?style=for-the-badge)](https://github.com/Gilberto-Mascena/screanmatch-frases-api/issues)
+[![Versão do Repositório](https://img.shields.io/github/v/release/Gilberto-Mascena/screanmatch-frases-api?include_prereleases&style=for-the-badge)](https://github.com/Gilberto-Mascena/screanmatch-frases-api/releases)
+![Data de Lançamento](https://img.shields.io/github/release-date/Gilberto-Mascena/screanmatch-frases-api?style=for-the-badge)
+![Tamanho do Repositório](https://img.shields.io/github/repo-size/Gilberto-Mascena/screanmatch-frases-api?style=for-the-badge)
+
 # Desafio formação backend Java e Spring Boot Alura + ONE
 
 ## Descrição do Projeto
