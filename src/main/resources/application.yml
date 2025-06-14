@@ -1,3 +1,25 @@
+screanmatch-phrases:
+  api:
+    version: 1.0.0 # API version
+
 spring:
-  profiles:
-    active : test
+  datasource:
+    url: jdbc:h2:mem:devdb
+    driver-class-name: org.h2.Driver # Ou org.postgresql.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true # Exibe SQL no console
+    properties:
+      hibernate:
+        format-sql: true # Formata SQL para legibilidade
+        use-sql-comments: true # Adiciona comentários para legibilidade
+        dialect: org.hibernate.dialect.H2Dialect # Ou org.hibernate.dialect.PostgreSQLDialect
