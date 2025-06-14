@@ -55,7 +55,7 @@ _*GET /series/frases*_
     cd screanmatch-frases-api
 ```
 ```bash
-      mvn clean install
+    mvn clean install
 ```
 
 ```bash

@@ -53,7 +53,7 @@ _*GET /series/frases*_
 1. Clone the repository
 ```bash 
     git clone https://github.com/Gilberto-Mascena/screanmatch-frases-api.git 
-    CD screanmatch-frases-api
+    cd screanmatch-frases-api
 ```
 ```bash
     mvn clean install
