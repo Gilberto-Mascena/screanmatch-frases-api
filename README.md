@@ -14,61 +14,64 @@
 
 ## Desafio - Formação Backend Java e Spring Boot (Alura + ONE)
 
-### 💡 Sobre o Projeto
+### Sobre o Projeto
 
-O Screanmatch Frases API é uma API REST desenvolvida em Java com Spring Boot, que retorna uma frase aleatória de um banco de dados contendo frases icônicas de séries e filmes. A API fornece os seguintes dados:
+#### O Screanmatch Frases API é uma API REST desenvolvida em Java com Spring Boot, que retorna uma frase aleatória de um banco de dados contendo frases icônicas de séries e filmes. A API fornece os seguintes dados:
 
-✅ Frase\
-✅ Personagem\
-✅ Título da obra\
-✅ Pôster do filme/série
+- **Frase**
+- **Personagem**
+- **Título da obra**
+- **Pôster do filme / série**
 
-### 🔍 Endpoint Disponível
+### Endpoint Disponível
 
 _*GET /series/frases*_
 
-### 📚 Tecnologias Utilizadas
+### Tecnologias Utilizadas
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [JPA](https://spring.io/projects/spring-data-jpa)
 - [Hibernate](https://hibernate.org/)
+- [H2 Database](https://www.h2database.com/html/main.html) (para testes)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Maven](https://maven.apache.org/)
 
-### 🛠️ Requisitos
+### Requisitos
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Postman](https://www.postman.com/)
+- [Maven](https://maven.apache.org/)
 
-### 🌟 Demonstração
+### Fron-end da aplicação
 
 ![titanic](/src/main/resources/static/titanic.png)
 
 ![how i met your mother.png](/src/main/resources/static/how-i-met-your-mother.png)
 
-### 🚀 Como Executar
+### Como Executar
 1. Clone o repositório
+```bash
+    git clone https://github.com/Gilberto-Mascena/screanmatch-frases-api.git
+    cd screanmatch-frases-api
 ```
-git clone https://github.com/Gilberto-Mascena/screanmatch-frases-api.git
-```
-2. Crie um banco de dados no PostgreSQL
-
-3. Configure o arquivo application-dev.yml com suas credenciais do banco de dados
-
-4. Abra o projeto na IDE de sua preferência (IntelliJ, VS Code, Eclipse, etc.)
-
-5. Execute a aplicação
-
-```
-mvn spring-boot:run
+```bash
+      mvn clean install
 ```
 
-6. Teste a API via Postman ou navegador
+```bash
+    mvn spring-boot:run
+```
 
-Acesse: http://localhost:8080/series/frases
+2. Acesse o H2 Console
+  
+    http://localhost:8080/h2-console
 
-### 🔧 Scripts SQL para popular a base de dados
-````
+   - **JDBC URL**: `jdbc:h2:mem:devdb`
+   - **User Name**: `sa`
+   - **Password**: *(deixe em branco)*
+
+### Scripts SQL para popular a base de dados
+```sql
 insert into frases(id, frase, personagem, titulo, poster) values (1, 'Amigos não mentem', 'Eleven', 'Stranger things', 'https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg');
 insert into frases(id, frase, personagem, titulo, poster) values (2, 'Bem-vinda ao mundo real. É uma droga. Você vai amar', 'Monica', 'Friends', 'https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg');
 insert into frases(id, frase, personagem, titulo, poster) values (3, 'Não é uma mentira se você acreditar nela', 'George Contanza', 'Seinfeld', 'https://m.media-amazon.com/images/M/MV5BZjZjMzQ2ZmUtZWEyZC00NWJiLWFjM2UtMzhmYzZmZDcxMzllXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg');
@@ -90,9 +93,19 @@ insert into frases(id, frase, personagem, titulo, poster) values (18, 'Nunca dei
 insert into frases(id, frase, personagem, titulo, poster) values (19, 'Eu sou o maior que já existiu!', 'Muhammad Ali', 'Ali', 'https://m.media-amazon.com/images/M/MV5BMTk1NzU3NDk0OF5BMl5BanBnXkFtZTcwNzk4NTkxMw@@._V1_SX300.jpg');
 insert into frases(id, frase, personagem, titulo, poster) values (20, 'A felicidade só é real quando compartilhada.', 'Christopher McCandless', 'Into the Wild', 'https://m.media-amazon.com/images/M/MV5BMjEzMjQyMDU4M15BMl5BanBnXkFtZTcwMzk2OTM2MQ@@._V1_SX300.jpg');
 
-````
+```
 
----
+
+3. Teste a API via Postman / Insomnia
+
+   `GET Verbo HTTP`
+```
+    http://localhost:8080/series/frases
+```
+
+4. Navegador\
+Acesse: http://localhost:8080/series/frases
+
 
 ### 📜 *Licença*
 
