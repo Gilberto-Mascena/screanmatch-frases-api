@@ -12,61 +12,68 @@
 
 
 # Screanmatch Phrases API
+
 ## Challenge - Java and Spring Boot Backend Training (Alura + ONE)
-### 💡 About the Project
-The Screanmatch Phrases API is a REST API developed in Java with Spring Boot, which returns a random phrase from a database containing iconic phrases from series and movies. The API provides the following data:
 
-✅ Phrase\
-✅ Character\
-✅ Title of the work\
-✅ Movie/series poster
+### About the Project
 
-### 🔍 Available Endpoint
+#### The Screanmatch Phrases API is a REST API developed in Java with Spring Boot, which returns a random phrase from a database containing iconic phrases from series and movies. The API provides the following data:
+
+- **Phrase**
+- **Character**
+- **Title of the work**
+- **Movie/series poster**
+
+### Available Endpoint
 
 _*GET /series/frases*_
-### 📚 Technologies Used
 
+### Technologies Used
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [JPA](https://spring.io/projects/spring-data-jpa)
 - [Hibernate](https://hibernate.org/)
-- [PostgreSQL](https://www.postgresql.org/) 
+- [H2 Database](https://www.h2database.com/html/main.html) (for testing)
+- [PostgreSQL](https://www.postgresql.org/)
 - [Maven](https://maven.apache.org/)
 
-### 🛠️ Requirements
-- [Java 21](https://www.oracle.com/br/java/technologies/downloads/) 
-- [PostgreSQL](https://www.postgresql.org/) 
-- [Postman](https://www.postman.com/) 
+### Requirements
+- [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Postman](https://www.postman.com/)
+- [Maven](https://maven.apache.org/)
 
-### 🌟 Demonstration
+### Application front-end
+
 ![titanic](/src/main/resources/static/titanic.png)
 
 ![how i met your mother.png](/src/main/resources/static/how-i-met-your-mother.png)
 
- ### 🚀 How run the application
-
+### How to Execute
 1. Clone the repository
+```bash 
+    git clone https://github.com/Gilberto-Mascena/screanmatch-frases-api.git 
+    CD screanmatch-frases-api
 ```
-git clone https://github.com/Gilberto-Mascena/screanmatch-frases-api.git
-```
-2. Create a database in PostgreSQL
-
-3. Configure the application-dev.yml file with your database credentials
-
-4. Open the project in your preferred IDE (IntelliJ, VS Code, Eclipse, etc.)
-
-5. Run the application
-```
-mvn spring-boot:run
+```bash
+    mvn clean install
 ```
 
-6. Test the API via Postman or browser
-
-Access: http://localhost:8080/series/frases
-
-### 🔧 SQL scripts to populate the database
-
+```bash
+    mvn spring-boot:run
 ```
+
+2. Access the H2 Console
+
+http://localhost:8080/h2-console
+
+- **JDBC URL**: `jdbc:h2:mem:devdb`
+- **User Name**: `sa`
+- **Password**: *(leave blank)*
+
+### SQL scripts to populate the database
+
+```sql
 insert into frases(id, frase, personagem, titulo, poster) values (1, 'Amigos não mentem', 'Eleven', 'Stranger things', 'https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg');
 insert into frases(id, frase, personagem, titulo, poster) values (2, 'Bem-vinda ao mundo real. É uma droga. Você vai amar', 'Monica', 'Friends', 'https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg');
 insert into frases(id, frase, personagem, titulo, poster) values (3, 'Não é uma mentira se você acreditar nela', 'George Contanza', 'Seinfeld', 'https://m.media-amazon.com/images/M/MV5BZjZjMzQ2ZmUtZWEyZC00NWJiLWFjM2UtMzhmYzZmZDcxMzllXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg');
@@ -89,6 +96,17 @@ insert into frases(id, frase, personagem, titulo, poster) values (19, 'Eu sou o 
 insert into frases(id, frase, personagem, titulo, poster) values (20, 'A felicidade só é real quando compartilhada.', 'Christopher McCandless', 'Into the Wild', 'https://m.media-amazon.com/images/M/MV5BMjEzMjQyMDU4M15BMl5BanBnXkFtZTcwMzk2OTM2MQ@@._V1_SX300.jpg');
 
 ```
+
+3. Test the API via Postman / Insomnia
+
+`GET HTTP Verb`
+```
+    http://localhost:8080/series/frases
+```
+4. Browser\
+Access: http://localhost:8080/series/frases
+
+
 ### 📜 *License*
 
 *This project is licensed under the MIT License. See more details at:* [_LICENSE.md_](./LICENSE.md)
