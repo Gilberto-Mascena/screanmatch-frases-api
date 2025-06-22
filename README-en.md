@@ -43,6 +43,56 @@ _*GET /series/frases*_
 - [Postman](https://www.postman.com/)
 - [Maven](https://maven.apache.org/)
 
+### Estructure of the Project
+
+```plaintext
+├── changelog.md
+├── images
+├── LICENSE.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── README-en.md
+├── README.md
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── br
+    │   │       └── com
+    │   │           └── mascenadev
+    │   │               └── screanmatchfrases
+    │   │                   ├── config
+    │   │                   │   ├── CorsConfiguration.java
+    │   │                   │   └── SwaggerConfig.java
+    │   │                   ├── controller
+    │   │                   │   └── FraseController.java
+    │   │                   ├── dto
+    │   │                   │   └── PhraseDTO.java
+    │   │                   ├── model
+    │   │                   │   └── Phrase.java
+    │   │                   ├── repository
+    │   │                   │   └── PhraseRepository.java
+    │   │                   ├── ScreanmatchFrasesApplication.java
+    │   │                   └── service
+    │   │                       └── PhraseService.java
+    │   └── resources
+    │       ├── application-dev.yml
+    │       ├── application-prod.yml
+    │       ├── application-test.yml
+    │       ├── application.yml
+    │       └── static
+    │           ├── how-i-met-your-mother.png
+    │           └── titanic.png
+    └── test
+        └── java
+            └── br
+                └── com
+                    └── mascenadev
+                        └── screanmatchfrases
+                            └── ScreanmatchFrasesApplicationTests.java
+
+```
+
 ### Application front-end
 
 ![titanic](/src/main/resources/static/titanic.png)
