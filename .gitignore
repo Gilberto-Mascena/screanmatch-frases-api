@@ -34,3 +34,4 @@ build/
 
 ### Environments Variables ###
 .env
+.env-db
